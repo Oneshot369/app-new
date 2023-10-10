@@ -1,3 +1,9 @@
+.form-floating{
+  padding: 10px;
+  margin: auto;
+  max-width: 40%;
+  min-width: 40%;
+}
 .mb-3{
   margin: auto;
   max-width: 40%;
