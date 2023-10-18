@@ -1,0 +1,30 @@
+<h1>Images</h1>
+
+<h2>First method</h2>
+<div *ngFor="let imageInfo of images">
+  <h4> {{ imageInfo.title }} </h4>
+  <img [src]="imageInfo.link" alt="img" height="100px">
+</div>
+
+<br/>
+
+<h2>Second method</h2>
+<!-- containing div -->
+<div class="container">
+  <div class="row">
+    <!-- for loop -->
+    <div *ngFor="let imageInfo of images" class="col-4">
+      <!-- card -->
+        <div class="card">
+          <img [src]="imageInfo.link" alt="img" class="card-img-top">
+          <!-- card body -->
+          <div class="card-body">
+            <h5 class="card-title">{{ imageInfo.title }}</h5>
+            <p class="card-text">{{ imageInfo.text }}</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+

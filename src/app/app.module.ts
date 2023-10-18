@@ -9,6 +9,8 @@ import { PricingComponent } from './pricing/pricing.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { FormsModule } from '@angular/forms';
 import { Formdata1Component } from './formdata1/formdata1.component';
+import { ImageCardsComponent } from './image-cards/image-cards.component';
+import { ComplexFormComponent } from './complex-form/complex-form.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { Formdata1Component } from './formdata1/formdata1.component';
     HomeComponent,
     PricingComponent,
     PageNotFoundComponent,
-    Formdata1Component
+    Formdata1Component,
+    ImageCardsComponent,
+    ComplexFormComponent
   ],
   imports: [
     BrowserModule,
