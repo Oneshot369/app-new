@@ -7,6 +7,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { Formdata1Component } from './formdata1/formdata1.component';
 import { ImageCardsComponent } from './image-cards/image-cards.component';
 import { ComplexFormComponent } from './complex-form/complex-form.component';
+import { CountryViewComponent } from './country-view/country-view.component';
 
 const routes: Routes = [
   {path:'home', component: HomeComponent},
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path:'form1', component: Formdata1Component},
   {path:'complex', component: ComplexFormComponent},
   {path:'img', component: ImageCardsComponent},
+  {path:'country', component: CountryViewComponent},
   {path:'', component: HomeComponent},
   {path:'**', component: PageNotFoundComponent}
 ];

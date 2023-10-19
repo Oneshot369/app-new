@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div *ngFor="let country of countries$ | async" class="col-4">
+      <!-- card -->
+        <div class="card">
+          <img [src]="country.flags.png" alt="img" class="card-img-top">
+          <!-- card body -->
+          <div class="card-body">
+            <h5 class="card-title">{{ country.name.common }}</h5>
+            <p class="card-text">{{ country.capital[0] }}</p>
+            <p class="card-text">{{ country.region }}</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 interface ComplexForm{
   username: string;
@@ -25,8 +26,20 @@ export class ComplexFormComponent {
     offers: false,
     gender: "NA"
   };
-  onSubmit2(){
-    console.log("Form data submitted: ", this.formData2);
+  formValid = false;
+  formSubmit = false;
+  onSubmit() {
+    // Perform actions on form submission
+    this.formValid = true;
+    this.formSubmit = true;
 
-  };
+    // You can access form values through this.contact object
+    console.log('Form submitted:', this.formData2);
+  }
+
+  resetForm(form: NgForm) {
+    form.resetForm(); // Reset the form to its initial state
+    this.formValid = false; // Reset form validation state
+    this.formSubmit = false; // Reset form submission state
+  }
 }

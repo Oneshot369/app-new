@@ -11,6 +11,8 @@ import { FormsModule } from '@angular/forms';
 import { Formdata1Component } from './formdata1/formdata1.component';
 import { ImageCardsComponent } from './image-cards/image-cards.component';
 import { ComplexFormComponent } from './complex-form/complex-form.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CountryViewComponent } from './country-view/country-view.component'
 
 @NgModule({
   declarations: [
@@ -21,12 +23,14 @@ import { ComplexFormComponent } from './complex-form/complex-form.component';
     PageNotFoundComponent,
     Formdata1Component,
     ImageCardsComponent,
-    ComplexFormComponent
+    ComplexFormComponent,
+    CountryViewComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
