@@ -26,4 +26,3 @@ export class CountryService {
     throw new Error('Something went wrong, please try again later.');
   }
 }
-
